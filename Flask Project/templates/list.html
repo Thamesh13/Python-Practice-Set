@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <style>
+        table, tr, th{
+            border: 1px solid black; 
+            border-collapse: collapse;
+        }
+    </style>
+   <body>
+      <table>
+         <thead>
+            <td>Aadhaar</td>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Doses</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["aadhar_num"]}}</td>
+               <td>{{row["name"]}}</td>
+               <td> {{ row["age"]}}</td>
+               <td>{{row["doses"]}}</td>	
+            </tr>
+         {% endfor %}
+      </table><br><br>
+      
+      <a href = "/">Home Page</a>
+   </body>
+</html>

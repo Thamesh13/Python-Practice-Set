@@ -1,0 +1,9 @@
+
+.title h1{
+    color: darkcyan;
+    text-align: center;
+    padding: 20px;
+}
+.table{
+    background-image: linear-gradient(to top, #445774, #335e75, #296370, #2d6766, #3c6a5b);
+}
